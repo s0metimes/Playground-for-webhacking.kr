@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>result</title>
+    </head>
+    <body>
+        <input type="text" id="inputStr" name="" value="">
+        <button type="button" name="button" onclick="showResult()">결과 보기</button>
+        <div class="" id="result"></div>
+        <script src="solve.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            function showResult() {
+                var input = document.getElementById('inputStr').value;
+                var result = decodeIt(input);
+
+                document.getElementById('result').innerHTML = result;
+            }
+        </script>
+    </body>
+</html>
